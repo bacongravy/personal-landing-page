@@ -2,11 +2,12 @@
 ---
 
 $text-color: #46433A;
-$anchor-text-color: #CE534D;
-$background-color: #F1EED9;
+$anchor-text-color: #46433A;
+$background-color: #e5f5ff;
 
 body {
-	font-family: 'Vollkorn', serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 135%;
 	color: $text-color;
 	background-color: $background-color;
 }
@@ -18,7 +19,7 @@ main {
 
 /*** wrapper div for both header and main ***/
 .wrapper {
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 /*** anchor tags ***/
@@ -48,11 +49,22 @@ since it must be aligned with the content */
 	margin-left: 0;
 }
 
+.fa-lg.main-list-item-icon {
+	vertical-align: -8%;
+}
+
 /* list icons */
 .main-list-item-icon {
 	width: 36px;
 	color: $text-color;
 }
+
+/*** main content ***/
+html.safari div.content p {
+	text-align: justify;
+	-webkit-hyphens: auto;
+}
+
 
 /*** logo ***/
 .logo-container {
@@ -82,7 +94,8 @@ since it must be aligned with the content */
 .tagline-container p {
 	font-size: 1.3em;
 	text-align: center;
-	margin-bottom: 2em;
+	margin-top: .5em;
+	margin-bottom: 1em;
 }
 
 /******/
@@ -95,19 +108,11 @@ hr {
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
 }
 
-/*** footer ***/
 footer {
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	height: 20px;
-}
-
-.poweredby {
-	font-family: "Arial Narrow", Arial;
-	font-size: 0.6em;
-	line-height: 0.6em;
-	padding: 0 5px;
 }
 
 /*** media queries ***/
@@ -116,7 +121,17 @@ footer {
 	/* wrapper stays 480px wide past 480px wide and is kept centered */
 	.wrapper {
 		width: 480px;
-		margin: 10% auto 0 auto;
+		margin: 5% auto 0 auto;
+	}
+	.main-list {
+		text-align: center;
+	}
+	.main-list-item {
+		display: inline-block;
+		padding-right: 20px;
+	}
+	.header-bottom {
+		display: block;
 	}
 }
 
@@ -127,6 +142,22 @@ footer {
 	.wrapper {
 		width: 680px;
 	}
+	.main-list {
+		text-align: right;
+	}
+	.main-list-item {
+		display: list-item;
+		padding-right: 0;
+	}
+	.header-bottom {
+		display: none;
+	}
+	hr {
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $text-color);
+		background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $text-color);
+		background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $text-color);
+		background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color);
+	}
 
 	/* the header column stays left and has a dynamic width with all contents
 	aligned right */
@@ -134,6 +165,7 @@ footer {
 		float: left;
 		width: 46%;
 		text-align: right;
+		position: relative; left: -30px;
 	}
 
 	.author-container h1,

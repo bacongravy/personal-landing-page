@@ -1,24 +1,20 @@
 # general configuration
-url: http://excentris.net
+url: https://www.bacongravy.net
 baseurl: ''
 
 # compass configuration
 compass:
-  # an avatar or logo (optional)
-  logo: "/images/compass.png"
-  # author will appear under the avatar (optional)
-  author: "Compass"
-  # tagline will appear under the title (optional)
-  tagline: "The <a href='http://jekyllrb.com'>Jekyll</a> theme for your personal landing page"
-  # if include_content is true, the contents of the content.html include will be
-  # added right above the generated item list, if present
+  logo: "/images/avatar.png"
+  author: "David Kramer"
+  description: "A page describing David Kramer"
+  tagline: "A maker and a leader"
   include_content: true
-  # if include_analytics is true, the content of the analytics.html include will
-  # be added at the end of the <head> section. You can add your Google Analytics
-  # Tracking Code to that file.
   include_analytics: false
-  # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "compass"
+  linkedin: "https://www.linkedin.com/in/bacongravy"
+  twitter: "https://twitter.com/bacongravy"
+  facebook: "https://www.facebook.com/bacongravy"
+  stackoverflow: "https://stackoverflow.com/users/5829298/bacongravy"
+  github: "https://github.com/bacongravy"
 
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
