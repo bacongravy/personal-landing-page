@@ -1,6 +1,7 @@
 # general configuration
 url: https://www.bacongravy.net
 baseurl: ''
+destination: public
 
 # compass configuration
 compass:
