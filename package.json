@@ -2,6 +2,6 @@
   "private": true,
   "scripts": {
     "install": "yum install ruby23-devel.x86_64 && gem install bundler --no-ri --no-rdoc && bundle install",
-    "build": "bundle exec jekyll build"
+    "build": "jekyll build"
   }
 }
