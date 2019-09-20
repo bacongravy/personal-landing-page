@@ -18,7 +18,7 @@ compass:
   github: "https://github.com/bacongravy"
 
 # exclude
-exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "package.json"]
 
 # Dependencies
 markdown: kramdown
