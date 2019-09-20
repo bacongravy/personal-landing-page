@@ -1,3 +1,3 @@
 tasks:
-- init: npm install
+- init: bundle install
 - command: bundle exec jekyll serve -P 3000
