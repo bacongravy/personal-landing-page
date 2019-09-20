@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "install": "bundle install",
     "build": "jekyll build"
   }
 }
