@@ -73,14 +73,10 @@ html.safari div.content p {
 }
 
 .logo {
-	width: 96px;
-	height: 96px;
+	width: 120px;
+	height: 120px;
 	display: inline-block;
 	background-size: cover;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	border: 2px solid $background-color;
-	box-shadow: 0 0 0 3px $text-color;
 }
 
 /*** author ***/
